@@ -4,7 +4,7 @@ import { ICarsRepository } from "@modules/cars/repositories/ICarsRepository";
 
 import { Car } from "../entities/Car";
 
-class CarsRpository implements ICarsRepository {
+class CarsRepository implements ICarsRepository {
     private repository: Repository<Car>;
 
     constructor() {
@@ -76,4 +76,4 @@ class CarsRpository implements ICarsRepository {
 		}
 }
 
-export { CarsRpository };
+export { CarsRepository };

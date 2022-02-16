@@ -1,6 +1,7 @@
 import { CarsRepositoryInMemory } from "@modules/cars/repositories/in-Memory/CarsRepositoryInMemory";
 import { SpecificationsRepositoryInMemory } from "@modules/cars/repositories/in-Memory/SpecificationsRepositoryInMemory";
 import { AppError } from "@shared/errors/AppError";
+
 import { CreateCarSpecificationUseCase } from "./CreateCarSpecificationUseCase";
 
 let createCarSpecificationUseCase: CreateCarSpecificationUseCase;
@@ -27,6 +28,7 @@ describe("Create Car Specification", () => {
             });
         }).rejects.toBeInstanceOf(AppError);
     });
+		
     it("should be able to add a new specification to the car", async () => {
         const car = await carsRepositoryInMemory.create({
             name: "Name Car",
