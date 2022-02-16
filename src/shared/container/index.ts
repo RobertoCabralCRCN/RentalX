@@ -2,7 +2,7 @@ import { container } from "tsyringe";
 
 import "@shared/container/providers";
 
-import { IUsersRepository } from "@modules/accounts/repositories/IUsersRepostirory";
+import { IUsersRepository } from "@modules/accounts/repositories/IUsersRepository";
 import { UsersRepository } from "@modules/accounts/infra/typeorm/repositories/UsersRepository";
 import { ISpecificationsRepository } from "@modules/cars/repositories/ISpecificationsRepository";
 import { ICategoriesRepository } from "@modules/cars/repositories/ICategoriesRepository";
